@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!-- Our own CSS page link -->
+ <link rel="stylesheet" href="styles.css">
+    <title>Divine Destination</title>
+</head>
+
+<body>
+    <header class="container my-5">
+        <div class="title d-flex justify-content-center" >
+<!-- Title and tag line -->
+ <!-- stars icon code -->
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-stars me-5" viewBox="0 0 16 16">
+    <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+  </svg>
+
+    <h1 class="justify-content-center">Divine Destination</h1>
+
+<!-- stars icon code-->
+    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-stars ms-5" viewBox="0 0 16 16">
+        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+      </svg>
+        </div>  
+    </header>
+<!-- Navigation -->
+        <nav>
+        </nav>
+<!-- Main page content -->
+    <main id="home">
+        <div class="container-fluid">
+<!-- Main area -->
+    <div class="row d-flex"> 
+<!-- Left side - How to play -->
+        <div id="gameRules" class="col-6">
+            <h2>How to play:</h2>
+            <p>Pick and click on one of the 8 tarot cards, each of which has a meaning related to travel. The card will turn and tell you it's fortune. Click the button to see where it takes you!</p>
+<!-- Left side - Chosen card texts (not seen until card clicked)        -->
+            <div class="cardResults d-flex">
+<!-- The Fool Description -->
+                <div id="textFool" class="mb-5 describeCard">
+                    <h3>The Fool Card</h3>
+                    <p>Okay, so you want to blow off some steam, mess about, annoy the locals. The Fool is always up for a journey! This is an excellent card for a question about travel. It suggests a lively adventure                         to parts unknown.</p>
+                    <div class="d-flex justify-contents-center">
+                    <a class="btn btn-sm btn-dark mx-auto" href="destinations.html#budapest">Take me away!</a>
+                    </div>
+                </div>
+<!-- The Magician Description -->
+                <div id="textMagician" class="describeCard">
+                    <h3>The Magician Card</h3>
+                    <p>Looking for a magical getaway? For that special something with mystery and history? Look no further than…</p>
+                    <div class="d-flex justify-contents-center">
+                    <a class="btn btn-sm btn-dark mx-auto" href="destinations.html#cartegena">Take me away!</a>
+                    </div>
+                </div>
+<!-- The Lovers Description -->
+                <div id="textLovers" class=" describeCard">
+                    <h3>The Lovers Card</h3>
+                    <p>If only airplane seats were always in twos, not threes. Grab your beau (or find one when you're there or not!) your travels can be all the romance you need when you head to…</p>
+                    <div class="d-flex justify-contents-center">
+                    <a class="btn btn-sm btn-dark mx-auto" href="destinations.html#paris">Take me away!</a>
+                    </div>
+                </div>
+<!-- The Sun Description -->
+                <div id="textSun" class=" describeCard">
+                    <h3>The Sun Card</h3>
+                    <p>As it says on the tin &hyphen; you're looking for one thing, and one thing only. Sun, sun, and more sun. You're bright, bold and ready to fly...</p>
+                    <div class="d-flex justify-contents-center">
+                    <a class="btn btn-sm btn-dark mx-auto" href="destinations.html#sydney">Take me away!</a>
+                    </div>
+                </div>
+<!-- The Empress Description -->
+                <div id="textEmpress" class="describeCard">
+                    <h3>The Empress Card</h3>
+                    <p>The Empress is about indulgence, richness, creativity and pleasure. A culturaly rich destination awaits</p>
+                    <div class="d-flex justify-contents-center">
+                    <a class="btn btn-sm btn-dark mx-auto" href="destinations.html#capeTown">Take me away!</a>
+                    </div>
+                </div>
+<!-- Death Description -->
+                <div id="textDeath" class="describeCard">
+                    <h3>The Death Card</h3>
+                    <p>his may not seem like a good omen for your holiday, but it's actually perfect. It means change. You work yourself to the bone in your day-to-day, so now it's time to relax so hard you'll feel like                     you've died and gone to the dreamy afterlife.</p>
+                    <div class="d-flex justify-contents-center">
+                    <a class="btn btn-sm btn-dark mx-auto" href="destinations.html#copenhagen">Take me away!</a>
+                    </div>
+                </div>
+<!-- The World Description -->
+                <div id="textWorld" class="describeCard">
+                    <h3>The World Card</h3>
+                    <p>We've checked in with your guardian angel, and they're recommending a multi-centre trip. Bet you thought that's something you'd never hear. We recommend starting in…. And heading to…</p>
+                    <div class="d-flex justify-contents-center">
+                    <a class="btn btn-sm btn-dark mx-auto" href="destinations.html#bali">Take me away!</a>
+                    </div>
+                </div>
+<!-- The moon Description -->
+                <div id="textMoon" class="describeCard">
+                    <h3>The Moon Card</h3>
+                    <p>That's right, you've exhausted all of the worldly destinations on offer. Time to call Richard Branson! …only kidding. In your case, you're a bit of a night owl. You need a holiday that'll give you                     the attractions you truly need, day and night.</p>
+                    <div class="d-flex justify-contents-center">
+                    <a class="btn btn-sm btn-dark mx-auto" href="destinations.html#bali">Take me away!</a>
+                    </div>
+                </div>
+       
+            </div>
+<!-- Opt out button to destinations page that disappears when cards are clicked -->    
+            <div id="default" class="d-flex justify-content-center describecard">
+            <a id="nextPage" class="btn btn-outline-light btn-lg mx-auto" href="destinations.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-airplane-engines me-2" viewBox="0 0 16 16">
+                    <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.35 4.35 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0M7 3c0-.432.11-.979.322-1.401C7.542 1.159 7.787 1 8 1s.458.158.678.599C8.889 2.02 9 2.569 9 3v4a.5.5 0 0 0 .276.447l5.448 2.724a.5.5 0 0 1 .276.447v.792l-5.418-.903a.5.5 0 0 0-.575.41l-.5 3a.5.5 0 0 0 .14.437l.646.646H6.707l.647-.646a.5.5 0 0 0 .14-.436l-.5-3a.5.5 0 0 0-.576-.411L1 11.41v-.792a.5.5 0 0 1 .276-.447l5.448-2.724A.5.5 0 0 0 7 7z"/>
+                  </svg>Take Me Straight There</a>
+            </div>
+        </div>  
+
+<!-- Tarot layout on right side of screen   -->
+        <div id="cardTable" class="cardLayout col-6">
+<!-- Top row of cards -->
+        <div class="cardsRow row my-5">
+<!-- The Fool Card -->
+            <div onclick="cardPick(this.id)" id="theFool" class="tarotCard col-3 me-auto p-0">
+                <div class="cardFace cardFront">
+                    <img src="imgs/cardBack.png" alt="">
+                </div>
+                <div class="cardFace cardBack">
+                    <img src="imgs/modern-way-tarot-card-the-fool-meaning-600x1024.png.webp" alt="">
+                </div>
+            </div>
+<!-- The Magician Card -->
+            <div onclick="cardPick(this.id)" id="theMagician" class="tarotCard col-3 me-auto">
+                <div class="cardFace cardFront">
+                    <img src="imgs/cardBack.png" alt="">
+                </div>
+                <div class="cardFace cardBack">
+                    <img src="imgs/modern-way-tarot-card-the-magician-meaning-600x1024.png.webp" alt="">
+                </div> 
+            </div>
+<!-- The Lovers Card -->
+            <div onclick="cardPick(this.id)" id="theLovers" class="tarotCard col-3 me-auto">
+                <div class="cardFace cardFront">
+                    <img src="imgs/cardBack.png" alt="">
+                </div>
+                <div class="cardFace cardBack">
+                    <img src="imgs/modern-way-tarot-card-the-lovers-1-600x1024.png.webp" alt="">
+                </div>
+            </div>
+<!-- The Sun Card -->
+            <div onclick="cardPick(this.id)" id="theSun" class="tarotCard col-3 me-auto">
+                <div class="cardFace cardFront">
+                    <img src="imgs/cardBack.png" alt="">
+                </div>
+                <div class="cardFace cardBack">
+                    <img src="imgs/modern-way-tarot-card-the-sun-600x1024.png.webp" alt="">
+                </div>
+            </div>
+        </div>
+<!-- The bottom row of cards-->
+        <div class="cardsRow row">
+<!-- The Empress Card -->
+            <div onclick="cardPick(this.id)" id="theEmpress" class="tarotCard col-3 me-auto">
+                <div class="cardFace cardFront">
+                    <img src="imgs/cardBack.png" alt="">
+                </div>
+                <div class="cardFace cardBack">
+                    <img src="imgs/modern-way-tarot-card-the-empress-600x1024.png.webp" alt="">
+                </div>
+            </div>
+<!-- The Death Card -->
+            <div onclick="cardPick(this.id)" id="death"  class="tarotCard col-3 me-auto">
+                <div class="cardFace cardFront">
+                    <img src="imgs/cardBack.png" alt="">
+                </div>
+                <div class="cardFace cardBack">
+                    <img src="imgs/modern-way-tarot-card-death-600x1024.png.webp" alt="">
+                </div>
+            </div>
+<!-- The World Card -->
+            <div onclick="cardPick(this.id)" id="theWorld" class="tarotCard col-3 me-auto">
+                <div class="cardFace cardFront">
+                    <img src="imgs/cardBack.png" alt="">
+                </div>
+                <div class="cardFace cardBack">
+                    <img src="imgs/modern-way-tarot-card-the-world-600x1024.png.webp" alt="">
+                </div>
+            </div>
+<!-- The Moon Card -->
+            <div onclick="cardPick(this.id)" id="theMoon" class="tarotCard col-3 me-auto">
+                <div class="cardFace cardFront">
+                    <img src="imgs/cardBack.png" alt="">
+                </div>
+                <div class="cardFace cardBack">
+                    <img src="imgs/modern-way-tarot-card-the-moon-600x1024.png.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> 
+    </div>
+    </main>
+<!-- Footer     -->
+    <footer>
+    </footer>
+
+<!-- Javascript links for Bootstrap and our own - they have to go inside the body but after all the html code -->
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+body {
+background-color: #390e7a;
+color: white;
+}
+
+div .title {
+    width: 100%;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+/* change the stars icons to white */
+
+.bi-stars {
+    color: white;
+}
+
+/* create the glow effect when hovering the mouse over buttons */
+
+.btn:hover {
+    box-shadow: -2px 3px 22px 1px #f2eb65;
+}
+
+/* set the size and position of the cards */
+
+.tarotCard {
+    height: 250px;
+    width: 150px;
+    position: relative;
+    
+    transition: transform 1600ms;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+/* create the flipped style for the card that the Javascript will add when the card is clicked */
+
+.tarotCard.flipped {
+    transform: rotateY(-180deg);
+    
+}
+
+/* create the glow effect when hovering the mouse over the cards */
+
+.tarotCard:hover {
+    box-shadow: -2px 3px 22px 1px #f2eb65;
+}
+
+/* Set the size of the images used in the tarot cards */
+
+.tarotCard img {
+    height: 250px;
+    width: 150px;
+}
+
+/* Set the styling for the 'Face' of the tarot cards */
+
+.cardFace {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    perspective: 500;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+} 
+
+/* part of the javascript that turns the card */
+
+.cardBack {
+    transform: rotateY(180deg);
+}
+
+/* sets all the cards text descriptions to not display  */
+
+div[id^="text"]{
+    display: none;
+}
+
+/* fixes the size and text-alignment of the area where the descriptions texts are shown */
+
+.cardResults {
+    height: 20vh;
+    text-align: center;
+    margin-top: 6%;
+}
+
+/* styling of the Game Rules paragraph */
+
+#gameRules {
+    padding-left:6%;
+    padding-right: 6%;
+}
+
+
+/* Destination page styling */
+
+.otherPage {
+    padding-top: 35vh;
+}
+
+header {
+    background-color: #390e7a;
+    margin-top: none;
+}
+
+
+#destinations   {
+   width: 50%;
+}
+
+/* styling for the postcard including border, drop shadow, font and font colour */
+
+.postcard {
+    display: flex;
+    float: left;
+    padding: 2rem;
+    margin-bottom: 10%;
+    border: 1px solid grey;
+    border-radius: 3px;
+    height: 60vh;
+    align-items: center;
+    box-shadow: -5px 12px 23px rgba(0, 0, 0, 0.4)  ; 
+	-webkit-box-shadow: -5px 12px 23px rgba(0, 0, 0, 0.4)  ; 
+	-moz-box-shadow: -5px 12px 23px rgba(0, 0, 0, 0.4)  ; 
+    font-family: "Caveat", sans-serif;
+    color: black;
+}
+
+/* sets the background for all the postcards */
+
+section {
+    background-image: url(imgs/cardBG1.jpg);
+    background-size: cover;
+}
+
+
+/* sets the background for every other postcard to a different image */
+
+section:nth-of-type(even) {
+    background-image: url(imgs/cardbg3.jpg);
+    background-size: cover;
+}
+
+/* sets width of postcard */
+
+.postcard div {
+    width: 50%;
+
+}
+
+/* styling of the 'address' or left side of postcard */
+
+.address    {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-right: 1px solid gray;
+    height: 100%; 
+}
+
+.address h2 {
+    font-size: 4em;
+    text-decoration: underline;
+}
+
+.address h3 {
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+/* styling of the message or right side of card */
+
+.message {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: normal;
+}
+
+/* styling the image to look like a stamp */
+
+#destinations img {
+    width: 8rem;
+    height: 9rem;
+    border-radius: 4%;
+    --r: 4px; /* control the size of the perforations */
+  padding: calc(2*var(--r));
+  filter: grayscale(.4) drop-shadow(0 0 1px #0005) drop-shadow(0 0 1px #0005);
+  background: 
+    radial-gradient(var(--r),#0000 98%,#fff) round
+      calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
+    linear-gradient(#fff 0 0)  no-repeat
+      50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+      margin-bottom: 2rem;
+      justify-self: left;
+      align-self: top;  
+}
+
+
+
+
+
+
+
+
