@@ -38,7 +38,9 @@
     <div class="pb-3 mb-2 row d-flex"> 
 <!-- Left side - How to play -->
             <div id="gameRules" class="col-xs-12 col-xl-6">
+<!-- div that acts as a default placeholder before click event to start turning cards - has no display                 -->
                 <div id="default" class="d-flex justify-content-center align-items-end">
+<!-- button to destinations page that turns into a reset button after first click event                    -->
                     <a id="nextPage" class="btn btn-outline-light btn-lg mb-5" href="destinations.html">Take Me Straight There</a>
                 </div>
                 <div class="top row">
@@ -122,11 +124,11 @@
 </div>  
 </div>
 <!-- Tarot layout on right side of screen   -->
-<div id="cardTable" class="cardLayout order-xs-1 col-xs-12 col-md-6">
+<div id="cardTable" class="cardLayout col-xs-12 col-lg-6">
 <!-- Top row of cards -->
 <div class="cardsRow row my-md-5 ms-4">
 <!-- The Fool Card -->
-<div onclick="cardPick(this.id)" id="theFool" class="tarotCard col-xs-6 col-md-3 me-auto p-0">
+<div onclick="cardPick(this.id)" id="theFool" class="tarotCard col-xs-6 col-lg-3 me-auto p-0">
 <div class="cardFace cardFront">
     <img src="imgs/cardBack.png" alt="">
 </div>
@@ -135,7 +137,7 @@
 </div>
 </div>
 <!-- The Magician Card -->
-<div onclick="cardPick(this.id)" id="theMagician" class="tarotCard col-xs-6 col-md-3 me-auto">
+<div onclick="cardPick(this.id)" id="theMagician" class="tarotCard col-xs-6 col-lg-3 me-auto">
 <div class="cardFace cardFront">
     <img src="imgs/cardBack.png" alt="">
 </div>
@@ -144,7 +146,7 @@
 </div> 
 </div>
 <!-- The Lovers Card -->
-<div onclick="cardPick(this.id)" id="theLovers" class="tarotCard col-xs-6 col-md-3  me-auto">
+<div onclick="cardPick(this.id)" id="theLovers" class="tarotCard col-xs-6 col-lg-3  me-auto">
 <div class="cardFace cardFront">
     <img src="imgs/cardBack.png" alt="">
 </div>
@@ -153,7 +155,7 @@
 </div>
 </div>
 <!-- The Sun Card -->
-<div onclick="cardPick(this.id)" id="theSun" class="tarotCard col-xs-6 col-md-3  me-auto">
+<div onclick="cardPick(this.id)" id="theSun" class="tarotCard col-xs-6 col-lg-3  me-auto">
 <div class="cardFace cardFront">
     <img src="imgs/cardBack.png" alt="">
 </div>
@@ -165,7 +167,7 @@
 <!-- The bottom row of cards-->
 <div class="cardsRow row ms-4">
 <!-- The Empress Card -->
-<div onclick="cardPick(this.id)" id="theEmpress" class="tarotCard col-xs-6 col-md-3  me-auto">
+<div onclick="cardPick(this.id)" id="theEmpress" class="tarotCard col-xs-6 col-lg-3  me-auto">
 <div class="cardFace cardFront">
     <img src="imgs/cardBack.png" alt="">
 </div>
@@ -174,7 +176,7 @@
 </div>
 </div>
 <!-- The Death Card -->
-<div onclick="cardPick(this.id)" id="death"  class="tarotCard col-xs-6 col-md-3  me-auto">
+<div onclick="cardPick(this.id)" id="death"  class="tarotCard col-xs-6 col-lg-3  me-auto">
 <div class="cardFace cardFront">
     <img src="imgs/cardBack.png" alt="">
 </div>
@@ -183,7 +185,7 @@
 </div>
 </div>
 <!-- The World Card -->
-<div onclick="cardPick(this.id)" id="theWorld" class="tarotCard col-xs-6 col-md-3  me-auto">
+<div onclick="cardPick(this.id)" id="theWorld" class="tarotCard col-xs-6 col-lg-3  me-auto">
 <div class="cardFace cardFront">
     <img src="imgs/cardBack.png" alt="">
 </div>
@@ -192,7 +194,7 @@
 </div>
 </div>
 <!-- The Moon Card -->
-<div onclick="cardPick(this.id)" id="theMoon" class="tarotCard col-xs-6 col-md-3  me-auto">
+<div onclick="cardPick(this.id)" id="theMoon" class="tarotCard col-xs-6 col-lg-3  me-auto">
 <div class="cardFace cardFront">
     <img src="imgs/cardBack.png" alt="">
 </div>
@@ -200,30 +202,29 @@
     <img src="imgs/modern-way-tarot-card-the-moon-600x1024.png.webp" alt="">
 </div>
 </div>
+
 </div>
 </div>
 </div> 
-</div>
+<!-- </div> -->
 </main>
 <!-- Footer     -->
-<footer class="footer">
-    <div>
-    <a href="https://www.facebook.com/?locale=en_GB">
-    <img src="logos/facebook.png"></a>
-    <a href="https://www.instagram.com/">
-    <img src="logos/instagram.png"></a>
-    <a href="https://x.com/?lang=en">
-    <img src="logos/twitter.png"></a>
-    <a href="https://www.pinterest.co.uk/">
-    <img src="logos/pintrest.png"></a>
-    <a href="https://www.whatsapp.com/">
-    <img src="logos/whatsapp.png"></a>
+<footer id="footer" class="container d-flex flex-column align-items-end">
+<div class="">
+<a href="https://www.facebook.com/?locale=en_GB">
+<img src="logos/facebook.png"></a>
+<a href="https://www.instagram.com/">
+<img src="logos/instagram.png"></a>
+<a href="https://x.com/?lang=en">
+<img src="logos/twitter.png"></a>
+<a href="https://www.pinterest.co.uk/">
+<img src="logos/pintrest.png"></a>
+<a href="https://www.whatsapp.com/">
+<img src="logos/whatsapp.png"></a>
 </div>
-<div class="footerdiv1">
-    <a href="https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiNj6Gcy-qHAxWBhf0HHehxMp0QPQgJ">Privacy Policy</a>
-    </div>
-    <div class="footerdiv2">
-    <a href="https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiNj6Gcy-qHAxWBhf0HHehxMp0QPQgJ">Terms and Conditions</a>
+<div>
+<a href="https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiNj6Gcy-qHAxWBhf0HHehxMp0QPQgJ">Privacy Policy</a>
+<a href="https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiNj6Gcy-qHAxWBhf0HHehxMp0QPQgJ">Terms and Conditions</a>
 </div>
 </footer>
 
