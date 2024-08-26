@@ -1,6 +1,7 @@
 body {
 background-color: #390e7a;
 color: white;
+font-family: "Fira sans", sans-serif;
 }
 
 div .title {
@@ -123,6 +124,7 @@ div[id^="text"]{
 
 .otherPage {
     padding-top: 35vh;
+    font-family: "Fira sans", sans-serif;
 }
 
 header {
@@ -135,6 +137,8 @@ header {
    width: 50%;
    margin: auto;
 }
+
+/*index page styling for small screens */
 
 
 @media screen and (max-width: 450px){
@@ -212,6 +216,8 @@ header {
     border-left: 1px solid rgb(206, 202, 211);
 }
 
+/* style images like postage stamp */
+
 .addy img {
     width: 8rem;
     height: 9rem;
@@ -234,6 +240,7 @@ header {
     margin: 5% 0;
 }
 
+/* style postcards for smaller screens */
 
 @media screen and (max-width: 990px){
 
@@ -276,6 +283,8 @@ header {
 
 }
 
+/* Style postcards for larger screens */
+
 @media screen and (min-width: 990px){
     .addy {
         height: 100%;
@@ -292,6 +301,8 @@ header {
     }
     
 }
+
+/* Style adjustment for card area for larger screens */
 
 @media screen and (min-width: 965px){
     .cardsRow{
