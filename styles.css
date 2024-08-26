@@ -138,6 +138,28 @@ header {
    margin: auto;
 }
 
+
+/* Footer styling */
+
+.footer {
+    position: relative;
+    top: 150px;
+    left: 10px;
+    bottom: 10px;
+    width: 100%;
+    color: white;
+    text-align: left;
+  }
+
+.footerdiv1 {
+    width:8%;
+    display:inline-block;
+}
+
+.footerdiv2 {
+    width:20%;
+    display:inline-block;
+}
 /*index page styling for small screens */
 
 
