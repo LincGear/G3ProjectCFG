@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header class="firstPage container my-md-5 py-3 py-md-5">
+    <header class="firstPage container mb-md-4 py-3 pt-md-5">
         <div class="title d-flex justify-content-center" >
 <!-- Title and tag line -->
  <!-- stars icon code -->
@@ -30,22 +30,28 @@
       </svg>
         </div>  
     </header>
+
 <!-- Main page content -->
     <main id="home">
-        <div class="container-fluid">
+    <div class="container-fluid">
 <!-- Main area -->
     <div class="pb-3 mb-2 row d-flex"> 
 <!-- Left side - How to play -->
-        <div id="gameRules" class="col-xs-12 col-lg-6 order-xs-2 order-md-1">
-            <div class="top row">
-            <h2 class="h2p">How to play:</h2>
+            <div id="gameRules" class="col-xs-12 col-xl-6">
+                <div id="default" class="d-flex justify-content-center align-items-end">
+                    <a id="nextPage" class="btn btn-outline-light btn-lg mb-5" href="destinations.html">Take Me Straight There</a>
+                </div>
+                <div class="top row">
+
+                    <h2 class="d-xs-none d-md-block">How to play:</h2>
 
 <!-- Alternate text for small screens -->
-            <h3 class="d-xs-block d-md-none">Select a card to play:</h3>
+                    <h3 class="d-xs-block d-md-none">Select a card to play:</h3>
 
             <p class="mobileNone">Pick and click on one of the 8 tarot cards, each of which has a meaning related to travel. The card will turn and tell you it's fortune. Click the button to see where it takes you!</p>
 <!-- Left side - Chosen card texts (not seen until card clicked)        -->
             <div class="cardResults d-flex">
+
 <!-- The Fool Description -->
                 <div id="textFool" class="mb-5 describeCard">
                     <h3>The Fool Card</h3>
@@ -111,116 +117,111 @@
                     </div>
                 </div>
                 </div>
-            </div>
-            <div class="bottom row">
-<!-- Opt out button to destinations page that disappears when cards are clicked and becomes a Reset Button-->    
-            <div id="default" class="d-flex justify-content-center align-items-end">
-            <a id="nextPage" class="btn btn-outline-light btn-lg mt-5" href="destinations.html">
-                  </svg>Take Me Straight There</a>
-            </div>
-        </div>  
-    </div>
+</div>
+<div class="bottom row">
+</div>  
+</div>
 <!-- Tarot layout on right side of screen   -->
-        <div id="cardTable" class="cardLayout order-xs-1 order-md-2 col-xs-12 col-md-6">
+<div id="cardTable" class="cardLayout order-xs-1 col-xs-12 col-md-6">
 <!-- Top row of cards -->
-        <div class="cardsRow row my-md-5 ms-4">
+<div class="cardsRow row my-md-5 ms-4">
 <!-- The Fool Card -->
-            <div onclick="cardPick(this.id)" id="theFool" class="tarotCard col-xs-6 col-md-3 me-auto p-0">
-                <div class="cardFace cardFront">
-                    <img src="imgs/cardBack.png" alt="">
-                </div>
-                <div class="cardFace cardBack">
-                    <img src="imgs/modern-way-tarot-card-the-fool-meaning-600x1024.png.webp" alt="">
-                </div>
-            </div>
+<div onclick="cardPick(this.id)" id="theFool" class="tarotCard col-xs-6 col-md-3 me-auto p-0">
+<div class="cardFace cardFront">
+    <img src="imgs/cardBack.png" alt="">
+</div>
+<div class="cardFace cardBack">
+    <img src="imgs/modern-way-tarot-card-the-fool-meaning-600x1024.png.webp" alt="">
+</div>
+</div>
 <!-- The Magician Card -->
-            <div onclick="cardPick(this.id)" id="theMagician" class="tarotCard col-xs-6 col-md-3 me-auto">
-                <div class="cardFace cardFront">
-                    <img src="imgs/cardBack.png" alt="">
-                </div>
-                <div class="cardFace cardBack">
-                    <img src="imgs/modern-way-tarot-card-the-magician-meaning-600x1024.png.webp" alt="">
-                </div> 
-            </div>
+<div onclick="cardPick(this.id)" id="theMagician" class="tarotCard col-xs-6 col-md-3 me-auto">
+<div class="cardFace cardFront">
+    <img src="imgs/cardBack.png" alt="">
+</div>
+<div class="cardFace cardBack">
+    <img src="imgs/modern-way-tarot-card-the-magician-meaning-600x1024.png.webp" alt="">
+</div> 
+</div>
 <!-- The Lovers Card -->
-            <div onclick="cardPick(this.id)" id="theLovers" class="tarotCard col-xs-6 col-md-3  me-auto">
-                <div class="cardFace cardFront">
-                    <img src="imgs/cardBack.png" alt="">
-                </div>
-                <div class="cardFace cardBack">
-                    <img src="imgs/modern-way-tarot-card-the-lovers-1-600x1024.png.webp" alt="">
-                </div>
-            </div>
+<div onclick="cardPick(this.id)" id="theLovers" class="tarotCard col-xs-6 col-md-3  me-auto">
+<div class="cardFace cardFront">
+    <img src="imgs/cardBack.png" alt="">
+</div>
+<div class="cardFace cardBack">
+    <img src="imgs/modern-way-tarot-card-the-lovers-1-600x1024.png.webp" alt="">
+</div>
+</div>
 <!-- The Sun Card -->
-            <div onclick="cardPick(this.id)" id="theSun" class="tarotCard col-xs-6 col-md-3  me-auto">
-                <div class="cardFace cardFront">
-                    <img src="imgs/cardBack.png" alt="">
-                </div>
-                <div class="cardFace cardBack">
-                    <img src="imgs/modern-way-tarot-card-the-sun-600x1024.png.webp" alt="">
-                </div>
-            </div>
-        </div>
+<div onclick="cardPick(this.id)" id="theSun" class="tarotCard col-xs-6 col-md-3  me-auto">
+<div class="cardFace cardFront">
+    <img src="imgs/cardBack.png" alt="">
+</div>
+<div class="cardFace cardBack">
+    <img src="imgs/modern-way-tarot-card-the-sun-600x1024.png.webp" alt="">
+</div>
+</div>
+</div>
 <!-- The bottom row of cards-->
-        <div class="cardsRow row ms-4">
+<div class="cardsRow row ms-4">
 <!-- The Empress Card -->
-            <div onclick="cardPick(this.id)" id="theEmpress" class="tarotCard col-xs-6 col-md-3  me-auto">
-                <div class="cardFace cardFront">
-                    <img src="imgs/cardBack.png" alt="">
-                </div>
-                <div class="cardFace cardBack">
-                    <img src="imgs/modern-way-tarot-card-the-empress-600x1024.png.webp" alt="">
-                </div>
-            </div>
+<div onclick="cardPick(this.id)" id="theEmpress" class="tarotCard col-xs-6 col-md-3  me-auto">
+<div class="cardFace cardFront">
+    <img src="imgs/cardBack.png" alt="">
+</div>
+<div class="cardFace cardBack">
+    <img src="imgs/modern-way-tarot-card-the-empress-600x1024.png.webp" alt="">
+</div>
+</div>
 <!-- The Death Card -->
-            <div onclick="cardPick(this.id)" id="death"  class="tarotCard col-xs-6 col-md-3  me-auto">
-                <div class="cardFace cardFront">
-                    <img src="imgs/cardBack.png" alt="">
-                </div>
-                <div class="cardFace cardBack">
-                    <img src="imgs/modern-way-tarot-card-death-600x1024.png.webp" alt="">
-                </div>
-            </div>
+<div onclick="cardPick(this.id)" id="death"  class="tarotCard col-xs-6 col-md-3  me-auto">
+<div class="cardFace cardFront">
+    <img src="imgs/cardBack.png" alt="">
+</div>
+<div class="cardFace cardBack">
+    <img src="imgs/modern-way-tarot-card-death-600x1024.png.webp" alt="">
+</div>
+</div>
 <!-- The World Card -->
-            <div onclick="cardPick(this.id)" id="theWorld" class="tarotCard col-xs-6 col-md-3  me-auto">
-                <div class="cardFace cardFront">
-                    <img src="imgs/cardBack.png" alt="">
-                </div>
-                <div class="cardFace cardBack">
-                    <img src="imgs/modern-way-tarot-card-the-world-600x1024.png.webp" alt="">
-                </div>
-            </div>
+<div onclick="cardPick(this.id)" id="theWorld" class="tarotCard col-xs-6 col-md-3  me-auto">
+<div class="cardFace cardFront">
+    <img src="imgs/cardBack.png" alt="">
+</div>
+<div class="cardFace cardBack">
+    <img src="imgs/modern-way-tarot-card-the-world-600x1024.png.webp" alt="">
+</div>
+</div>
 <!-- The Moon Card -->
-            <div onclick="cardPick(this.id)" id="theMoon" class="tarotCard col-xs-6 col-md-3  me-auto">
-                <div class="cardFace cardFront">
-                    <img src="imgs/cardBack.png" alt="">
-                </div>
-                <div class="cardFace cardBack">
-                    <img src="imgs/modern-way-tarot-card-the-moon-600x1024.png.webp" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    </div> 
-    </div>
-    </main>
+<div onclick="cardPick(this.id)" id="theMoon" class="tarotCard col-xs-6 col-md-3  me-auto">
+<div class="cardFace cardFront">
+    <img src="imgs/cardBack.png" alt="">
+</div>
+<div class="cardFace cardBack">
+    <img src="imgs/modern-way-tarot-card-the-moon-600x1024.png.webp" alt="">
+</div>
+</div>
+</div>
+</div>
+</div> 
+</div>
+</main>
 <!-- Footer     -->
-  <footer id="footer" class="container d-flex flex-column align-items-end">
-    <div class="">
-        <a href="https://www.facebook.com/?locale=en_GB">
-            <img src="logos/facebook.png"></a>
-        <a href="https://www.instagram.com/">
-            <img src="logos/instagram.png"></a>
-        <a href="https://x.com/?lang=en">
-            <img src="logos/twitter.png"></a>
-        <a href="https://www.pinterest.co.uk/">
-            <img src="logos/pintrest.png"></a>
-        <a href="https://www.whatsapp.com/">
-            <img src="logos/whatsapp.png"></a>
+<footer id="footer" class="container d-flex flex-column align-items-end">
+<div class="">
+<a href="https://www.facebook.com/?locale=en_GB">
+<img src="logos/facebook.png"></a>
+<a href="https://www.instagram.com/">
+<img src="logos/instagram.png"></a>
+<a href="https://x.com/?lang=en">
+<img src="logos/twitter.png"></a>
+<a href="https://www.pinterest.co.uk/">
+<img src="logos/pintrest.png"></a>
+<a href="https://www.whatsapp.com/">
+<img src="logos/whatsapp.png"></a>
 </div>
 <div>
-    <a href="https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiNj6Gcy-qHAxWBhf0HHehxMp0QPQgJ">Privacy Policy</a>
-    <a href="https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiNj6Gcy-qHAxWBhf0HHehxMp0QPQgJ">Terms and Conditions</a>
+<a href="https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiNj6Gcy-qHAxWBhf0HHehxMp0QPQgJ">Privacy Policy</a>
+<a href="https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiNj6Gcy-qHAxWBhf0HHehxMp0QPQgJ">Terms and Conditions</a>
 </div>
 </footer>
 
